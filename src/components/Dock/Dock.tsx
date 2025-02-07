@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useSpring, animated } from "@react-spring/web";
-import {Home, FolderOpenDot , BriefcaseBusiness, NotebookPen, Mail} from 'lucide-react'
+import { Home, FolderOpenDot, BriefcaseBusiness, NotebookPen, Mail } from 'lucide-react'
 import "./Dock.css";
 import {
   Tooltip,
@@ -105,40 +105,40 @@ const Dock = ({
 
   return (
     <div
-      className={`dock-container ${currentPosition}`}
+      className={`dock-container  ${currentPosition}`}
       onMouseEnter={handleParentMouseEnter}
       onMouseLeave={handleParentMouseLeave}
     >
       <animated.div
-        className="dock "
+        className="dock"
         style={{ ...getDockStyle(), ...visibilitySpring }}
       >
         {dockItems.map((item, index) => {
           let IconComponent = item;
           return (
             <div key={index}>
-            <TooltipProvider>
-              <Tooltip>
-                <TooltipTrigger>
-                  <animated.div
-                        className="dock-item group"
-                        style={scaleSpring(index)}
-                        onMouseEnter={() => handleMouseEnter(index)}
-                        onMouseLeave={handleMouseLeave}
-                      >
-                        <IconComponent className={'text-gray-500 group-hover:text-gray-100 transition-all duration-300'}/>
-                  </animated.div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{dockItemsTooltip[index]}</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger>
+                    <animated.div
+                      className="dock-item group"
+                      style={scaleSpring(index)}
+                      onMouseEnter={() => handleMouseEnter(index)}
+                      onMouseLeave={handleMouseLeave}
+                    >
+                      <IconComponent className={'text-gray-500 group-hover:text-gray-100 transition-all duration-300'} />
+                    </animated.div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{dockItemsTooltip[index]}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </div>
           )
         })}
-      </animated.div>
-    </div>
+      </animated.div >
+    </div >
   );
 };
 
