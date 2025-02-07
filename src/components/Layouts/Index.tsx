@@ -32,10 +32,10 @@ export default function Home({ children }: { children: React.ReactNode }) {
         className={`absolute top-0 text-white h-full w-full transition-opacity duration-500 ${isLoading ? 'opacity-0 invisible' : 'opacity-100 visible'}`}
       >
         <div className="h-[100vh] w-[100vw] flex p-7 gap-x-6">
-          <div className="min-w-[50vw] relative">
+          <div className="min-w-[50vw]">
             <Sidebar isLoading={isLoading} />
           </div>
-          <div className="w-full">
+          <div className="w-full border">
             {children}
           </div>
         </div>
