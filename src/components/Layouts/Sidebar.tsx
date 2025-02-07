@@ -1,5 +1,6 @@
 import Dock from "@/components/Dock/Dock";
 import RotatingText from "@/components/RotatingText/RotatingText";
+import Social from "../Social/Social";
 
 export default function Sidebar({ isLoading }: { isLoading: boolean }) {
   return (
@@ -41,6 +42,9 @@ export default function Sidebar({ isLoading }: { isLoading: boolean }) {
           </span>
         </p>
         <p className="mt-4">Engineer.</p>
+      </div>
+      <div className="mt-14 social-links">
+        <Social />
       </div>
 
     </div>
