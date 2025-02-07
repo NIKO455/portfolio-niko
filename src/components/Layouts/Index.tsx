@@ -1,9 +1,9 @@
 import Squares from "@/components/Squares";
 import FluidCursor from "@/components/FluidCursor";
-import Dock from "@/components/Dock/Dock";
 import Loader from "@/components/Loader/Loader";
 
 import { useState, useEffect } from "react";
+import Sidebar from "./Sidebar";
 
 export default function Home({ children }: { children: React.ReactNode }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,11 +31,11 @@ export default function Home({ children }: { children: React.ReactNode }) {
       < div
         className={`absolute top-0 text-white h-full w-full transition-opacity duration-500 ${isLoading ? 'opacity-0 invisible' : 'opacity-100 visible'}`}
       >
-        <div className="h-[90vh] w-[100vw] flex p-7 gap-x-6">
-          <div className="bg-gray-800 min-w-[30vw] rounded">
-            Sidebar
+        <div className="h-[100vh] w-[100vw] flex p-7 gap-x-6">
+          <div className="min-w-[50vw] relative">
+            <Sidebar isLoading={isLoading} />
           </div>
-          <div className="border border-gray-800 shadow-lg w-full">
+          <div className="w-full">
             {children}
           </div>
         </div>
@@ -53,15 +53,8 @@ export default function Home({ children }: { children: React.ReactNode }) {
       </div >
 
       {/* Custom cursor */}
-      < FluidCursor />
+      {/* < FluidCursor /> */}
 
-      {/* Dock */}
-      < div
-        className={`transition-opacity duration-500 ${isLoading ? 'opacity-0 invisible' : 'opacity-100 visible'}`}
-        style={{ zIndex: 1 }}
-      >
-        <Dock collapsible={false} responsive="bottom" />
-      </div >
 
     </>
   );

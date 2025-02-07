@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+.font-rubik {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'awesome';
+    src: url('../public/fonts/Awesome.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'second';
+    src: url('../public/fonts/EagleHorizonP.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'third';
+    src: url('../public/fonts/PerfectoCalligraphy.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'forth';
+    src: url('../public/fonts/RusticRoadway.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fifth';
+    src: url('../public/fonts/modernline.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.font-awesome{
+   font-family: "awesome", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+.font-first{
+  font-family: "fifth", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}

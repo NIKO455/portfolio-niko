@@ -23,7 +23,7 @@ const Dock = ({
   const dockItems = [Home, FolderOpenDot, BriefcaseBusiness, NotebookPen, Mail];
   const dockItemsTooltip = ["Home", "Projects", "Experience", "Blogs", "Contact"];
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index: any) => {
     setHoverIndex(index);
   };
 
@@ -66,7 +66,7 @@ const Dock = ({
     return { flexDirection };
   };
 
-  const scaleSpring = (index) => {
+  const scaleSpring = (index: any) => {
     const translateValue = (() => {
       if (hoverIndex === index) {
         switch (currentPosition) {
