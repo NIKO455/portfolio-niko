@@ -84,12 +84,12 @@ export default function Home() {
         </h1>
 
         <div className="mt-8 grid grid-cols-2 gap-4 mb-10">
-          <div className="border border-gray-600 rounded-xl bg-[#080707]">
+          <div className="border border-gray-600 rounded-xl bg-[#080707] cursor-pointer group">
             <img src="https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=2048" className="rounded-t-xl w-full object-cover" style={{ height: '170px' }} />
             <div className="p-3 ">
               <h2 className="text-xl font-medium py-1 flex justify-between items-center">
                 Sidhasewa
-                <div className="bg-gray-800 p-2 rounded-full relative group duration-600 transition-all overflow-hidden cursor-pointer">
+                <div className="bg-gray-900 group-hover:bg-gray-800 p-2 rounded-full relative duration-600 transition-all overflow-hidden">
                   <p className="group-hover:translate-x-5 group-hover:-translate-y-6  duration-400 transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-up-right">
                       <path d="M13 5H19V11" /><path d="M19 5L5 19" />
@@ -107,12 +107,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="border border-gray-600 rounded-xl bg-[#080707]">
+          <div className="border border-gray-600 rounded-xl bg-[#080707] cursor-pointer group">
             <img src="https://framerusercontent.com/images/hxgSQmquybiB6mIsV8wyxmKgo.jpeg" className="rounded-t-xl w-full object-cover" style={{ height: '170px' }} />
             <div className="p-3 ">
               <h2 className="text-xl font-medium py-1 flex justify-between items-center">
                 Hello Sawari
-                <div className="bg-gray-800 p-2 rounded-full relative group duration-400 transition-all overflow-hidden cursor-pointer">
+                <div className="bg-gray-900 group-hover:bg-gray-800 p-2 rounded-full relative group duration-400 transition-all overflow-hidden">
                   <p className="group-hover:translate-x-5 group-hover:-translate-y-6  duration-400 transition-all">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-up-right">
                       <path d="M13 5H19V11" /><path d="M19 5L5 19" />
