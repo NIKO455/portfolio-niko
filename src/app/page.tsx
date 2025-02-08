@@ -87,7 +87,7 @@ export default function Home() {
           <div className="border border-gray-600 rounded-xl bg-[#080707] cursor-pointer group">
             <img src="https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=2048" className="rounded-t-xl w-full object-cover" style={{ height: '170px' }} />
             <div className="p-3 ">
-              <h2 className="text-xl font-medium py-1 flex justify-between items-center">
+              <h2 className="text-[17px] font-medium py-1 flex justify-between items-center">
                 Sidhasewa
                 <div className="bg-gray-900 group-hover:bg-gray-800 p-2 rounded-full relative duration-600 transition-all overflow-hidden">
                   <p className="group-hover:translate-x-5 group-hover:-translate-y-6  duration-400 transition-all">
@@ -110,7 +110,7 @@ export default function Home() {
           <div className="border border-gray-600 rounded-xl bg-[#080707] cursor-pointer group">
             <img src="https://framerusercontent.com/images/hxgSQmquybiB6mIsV8wyxmKgo.jpeg" className="rounded-t-xl w-full object-cover" style={{ height: '170px' }} />
             <div className="p-3 ">
-              <h2 className="text-xl font-medium py-1 flex justify-between items-center">
+              <h2 className="text-[17px] font-medium py-1 flex justify-between items-center">
                 Hello Sawari
                 <div className="bg-gray-900 group-hover:bg-gray-800 p-2 rounded-full relative group duration-400 transition-all overflow-hidden">
                   <p className="group-hover:translate-x-5 group-hover:-translate-y-6  duration-400 transition-all">
