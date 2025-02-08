@@ -31,7 +31,7 @@ export default function Home({ children }: { children: React.ReactNode }) {
       < div
         className={`absolute top-0 text-white h-full w-full transition-opacity duration-500 ${isLoading ? 'opacity-0 invisible' : 'opacity-100 visible'}`}
       >
-        <div className="h-[100vh] w-[100vw] flex p-7 gap-x-6 overflow-hidden">
+        <div className="h-[100vh] w-full max-w-[1350px] m-auto flex p-7 gap-x-6 overflow-hidden">
           <div className="min-w-[50vw]">
             <Sidebar isLoading={isLoading} />
           </div>
