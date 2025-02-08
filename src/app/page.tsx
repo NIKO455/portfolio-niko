@@ -1,5 +1,18 @@
+import LogoWall from "@/components/LogoWall/LogoWall";
+import TiltedCard from "@/components/TiltedCard/TiltedCard";
 
 export default function Home() {
+
+  const logoImgs = [
+    { imgUrl: "https://skillforge.com/wp-content/uploads/2020/10/javascript.png", altText: "Javascript Logo" },
+    { imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/800px-Vimlogo.svg.png', altText: "Vim Logo" },
+    { imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png', altText: "Linux Logo" },
+    { imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png', altText: "PHP Logo" },
+    { imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Logo.min.svg/2560px-Logo.min.svg.png', altText: "Image Logo" },
+    { imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png', altText: "Node Logo" },
+    { imgUrl: 'https://www.atmail.com/wp-content/uploads/2018/01/React_logo_wordmark.png', altText: "React Logo" }
+  ];
+
   return (
     <div className="max-w-[90%]">
       <h1 className="text-5xl font-bold leading-[1.2]">
@@ -51,11 +64,29 @@ export default function Home() {
             </svg>
           </span>
         </button>
-
       </div>
 
-      <div>
+      <div className="w-full relative mt-8">
+        <p className="py-2">Technologies I Specialize In <span>✨</span></p>
+        <LogoWall
+          items={logoImgs}
+          direction='horizontal'
+          pauseOnHover={true}
+          size='clamp(8rem, 1rem + 20vmin, 25rem)'
+          duration='60s'
+          bgColor='#060606'
+          bgAccentColor='#111111'
+        />
+      </div>
 
+      <div className="mt-20">
+        <h1 className="text-5xl font-bold leading-[1.2]">
+          Recent Projects <br /> and <span className="text-purple-600">Achievements</span>
+        </h1>
+
+        <div className="mt-8 grid grid-cols-2 gap-4 mb-10">
+          projects
+        </div>
       </div>
 
     </div >
