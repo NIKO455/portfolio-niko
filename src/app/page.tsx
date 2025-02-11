@@ -78,7 +78,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="mt-20">
+      <div className="mt-10">
         <h1 className="text-5xl font-bold leading-[1.2]">
           Recent Projects <br /> and <span className="text-purple-600">Achievements</span>
         </h1>
@@ -130,6 +130,54 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-20">
+        <h1 className="text-5xl font-bold leading-[1.2]">
+          Design Thoughts and <br /> and <span className="text-purple-600">Perspectives</span>
+        </h1>
+
+        <div className="mt-8 grid grid-cols-2 gap-4 mb-5">
+          <div className="border border-gray-600 rounded-xl bg-[#080707] cursor-pointer group">
+            <img src="https://framerusercontent.com/images/0Mi0IWlbWJU3AYT2hGFzEwO4Ku8.png?scale-down-to=2048" className="rounded-t-xl w-full object-cover" style={{ height: '170px' }} />
+            <div className="p-3 ">
+              <p className="text-sm">April 8, 2022</p>
+              <h2 className="text-[17px] py-1 flex font-bold justify-between items-center group-hover:text-purple-500 transition-all duration-400">
+                Starting and Growing a career in web desing
+              </h2>
+            </div>
+          </div>
+          <div className="border border-gray-600 rounded-xl bg-[#080707] cursor-pointer group">
+            <img src="https://framerusercontent.com/images/hxgSQmquybiB6mIsV8wyxmKgo.jpeg" className="rounded-t-xl w-full object-cover" style={{ height: '170px' }} />
+            <div className="p-3 ">
+              <p className="text-sm">Mar 15, 2022</p>
+              <h2 className="text-[17px] py-1 flex font-bold justify-between items-center group-hover:text-purple-500 transition-all duration-400">
+                Crating a langind page that performs greate
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-10 group bg-gray-800 p-6 rounded-xl hover:bg-purple-600 cursor-pointer duration-400 transition-all ease-in-out">
+        <div className="flex items-center justify-between">
+          <p className="text-5xl leading-2 font-medium">Let's <br /> <span className="text-purple-600 group-hover:text-white"> collaborate</span></p>
+          <div className="bg-purple-600 group-hover:bg-white group-hover:text-purple-600 p-2 rounded-full relative group duration-400 transition-all  overflow-hidden">
+            <p className="group-hover:translate-x-8 group-hover:-translate-y-10  duration-400 transition-all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-up-right">
+                <path d="M13 5H19V11" /><path d="M19 5L5 19" />
+              </svg>
+            </p>
+            <p className="absolute top-12 -left-6 group-hover:translate-x-8 group-hover:-translate-y-10 duration-400 transition-all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-move-up-right">
+                <path d="M13 5H19V11" /><path d="M19 5L5 19" />
+              </svg>
+            </p>
+          </div>
+        </div>
+        <div className="mt-3">
+          Unlock the portential of your product with expret design and development service. Let's collaborate to create user-centered solutions that not only meet your goals but also delight your users.
         </div>
       </div>
 
